@@ -1,5 +1,5 @@
 class HeaderAnimation
-  # 10 - 80 - 10
+  # The page is divided in :  33 - 33 - 33
   constructor: ->
     @parts = [$('.part1'), $('.part2'), $('.part3')]
     @largeLetterSpacing  = 100
@@ -14,8 +14,8 @@ class HeaderAnimation
   animate: (part) ->
     otherParts = _.difference(@parts, [part])
     part.animate          { letterSpacing: @largeLetterSpacing }, { duration: 600, queue: false }
-    otherParts[0].animate { letterSpacing: @noLetterSpacing }, { duration: 600, queue: false }
-    otherParts[1].animate { letterSpacing: @noLetterSpacing }, { duration: 600, queue: false }
+    otherParts[0].animate { letterSpacing: @noLetterSpacing },    { duration: 600, queue: false }
+    otherParts[1].animate { letterSpacing: @noLetterSpacing },    { duration: 600, queue: false }
 
   reset: ->
     _.each @parts, (part) =>
