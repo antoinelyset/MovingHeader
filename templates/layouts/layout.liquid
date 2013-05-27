@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}Test Aurelia{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {{ "bootstrap.css" | asset_url | stylesheet_tag }}
+        {{ "responsive.css" | asset_url | stylesheet_tag }}
+        {{ "main.css" | asset_url | stylesheet_tag }}
+    </head>
+    <body>
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+        {{ "bootstrap.js" | asset_url | script_tag }}
+        {{ "main.js" | asset_url | script_tag }}
+    </body>
+</html>
