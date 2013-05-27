@@ -1,0 +1,1 @@
+Just a little code to replicate the header behavior of [http://www.hausderkunst.de/index.php?id=1&L=1](http://www.hausderkunst.de/index.php)

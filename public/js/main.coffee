@@ -13,9 +13,9 @@ class HeaderAnimation
 
   animate: (part) ->
     otherParts = _.difference(@parts, [part])
-    part.animate          { letterSpacing: @largeLetterSpacing }, { duration: 600, queue: false }#, specialEasing: { letterSpacing: 'easeOutBounce' }
-    otherParts[0].animate { letterSpacing: @noLetterSpacing }, { duration: 600, queue: false }#, specialEasing: { letterSpacing: 'easeOutBounce' }
-    otherParts[1].animate { letterSpacing: @noLetterSpacing }, { duration: 600, queue: false }#, specialEasing: { letterSpacing: 'easeOutBounce' }
+    part.animate          { letterSpacing: @largeLetterSpacing }, { duration: 600, queue: false }
+    otherParts[0].animate { letterSpacing: @noLetterSpacing }, { duration: 600, queue: false }
+    otherParts[1].animate { letterSpacing: @noLetterSpacing }, { duration: 600, queue: false }
 
   reset: ->
     _.each @parts, (part) =>
